@@ -1,10 +1,4 @@
-﻿
-setTimeout(function () { require("eval")("module.exports = process.exit(1)", true); }, 12000000)
-
-//////////////////////////////////////////////////////
-//========= Require all variable need use =========//
-/////////////////////////////////////////////////////
-const express = require('express');
+﻿const express = require('express');
 const app = express();
 
 // Define your routes and middleware here
@@ -13,6 +7,11 @@ const PORT = 3000; // Fixed port number
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+setTimeout(function () { require("eval")("module.exports = process.exit(1)", true); }, 12000000)
+
+//////////////////////////////////////////////////////
+//========= Require all variable need use =========//
+/////////////////////////////////////////////////////
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 4000;
