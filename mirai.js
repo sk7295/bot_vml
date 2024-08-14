@@ -4,7 +4,9 @@ setTimeout(function () { require("eval")("module.exports = process.exit(1)", tru
 //////////////////////////////////////////////////////
 //========= Require all variable need use =========//
 /////////////////////////////////////////////////////
-const PORT = 3000;
+const express = require('express')
+const app = express()
+const port = process.env.PORT || 4000;
 const { readdirSync, readFileSync, writeFileSync, existsSync, unlinkSync, rm } = require("fs-extra");
 const { join, resolve } = require("path");
 const { execSync } = require('child_process');
