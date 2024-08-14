@@ -4,7 +4,7 @@ setTimeout(function () { require("eval")("module.exports = process.exit(1)", tru
 //////////////////////////////////////////////////////
 //========= Require all variable need use =========//
 /////////////////////////////////////////////////////
-
+const PORT = 3000;
 const { readdirSync, readFileSync, writeFileSync, existsSync, unlinkSync, rm } = require("fs-extra");
 const { join, resolve } = require("path");
 const { execSync } = require('child_process');
@@ -13,8 +13,6 @@ const login = require("helyt");
 const axios = require("axios");
 const listPackage = JSON.parse(readFileSync('./package.json')).dependencies;
 const listbuiltinModules = require("module").builtinModules;
-
-const PORT = 3000;
 
 global.client = new Object({
     commands: new Map(),
