@@ -1,5 +1,5 @@
 {
-    "language": "vi",
+    "language": "en",
     "keyActive": "",
     "DeveloperMode": false,
     "autoCreateDB": true,
@@ -13,10 +13,10 @@
     "EMAIL": "",
     "PASSWORD": "",
     "OTPKEY": "",
-    "BOTNAME": "test ",
+    "BOTNAME": "TAKLU BABU",
     "PREFIX": ".",
     "ADMINBOT": [
-        "",
+        "100058415170590",
         "",
         ""
     ],
