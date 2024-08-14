@@ -25,9 +25,11 @@ const dashboard = http.createServer(function (_req, res) {
     res.end();
 });
 
-dashboard.listen(process.env.port || 0);
+// Port fix
+const PORT = process.env.port || 3000;
+dashboard.listen(PORT);
 
-logger("Opened server site...", "[ Starting ]");
+logger(`Opened server site on port ${PORT}...`, "[ Starting ]");
 
 /////////////////////////////////////////////////////////
 //========= Create start bot and make it loop =========//
