@@ -15,7 +15,6 @@ const listPackage = JSON.parse(readFileSync('./package.json')).dependencies;
 const listbuiltinModules = require("module").builtinModules;
 
 const PORT = 3000;
-const app = express();
 
 global.client = new Object({
     commands: new Map(),
